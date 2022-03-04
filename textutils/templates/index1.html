@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Text Analyzer</title>
+</head>
+ <style>
+.button {
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
+.button1 {background-color: #1F618D;}
+</style>
+<body>
+<h1>Analyze The Text</h1><br>
+ <form action='/analyze' method='get'>
+     <textarea name="text" style="width: 905px; height: 246px;" spellcheck="false" placeholder="Enter your text here" row="20" cols="80">
+     </textarea><br>
+     <input type="checkbox" name="removepunc">Remove Punctuations<br>
+     <input type="checkbox" name="removespace">Remove Spaces<br>
+     <input type="checkbox" name="uppercase">UpperCase Text<br>
+     <input type="checkbox" name="charcount">Characters Count<br>
+     <input type="checkbox" name="newlineremove">Remove New Lines<br>
+
+     <button class="button button1" type="submit">
+    Analyze Text
+</button>
+ </form>
+</body>
+
+</html>
